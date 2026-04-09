@@ -34,4 +34,20 @@ title: About
       <pre>&lt;li&gt;&lt;a href="/about"&gt;About&lt;/a&gt;&lt;/li&gt;</pre>
     </div>
   </div>
+  <div class="guide-card">
+    <div class="guide-icon"><i class="bi bi-cloud-upload"></i></div>
+    <div class="guide-content">
+      <h3>Deploy to Firebase</h3>
+      <ol>
+        <li>Create a new project at <a href="https://console.firebase.google.com" target="_blank">console.firebase.google.com</a></li>
+        <li>Run <code>firebase init</code> and select your project</li>
+        <li>Set public directory to <code>dist</code></li>
+        <li>Add your project name to <code>firebase.json</code>:</li>
+      </ol>
+      <pre>"site": "your-project-name"</pre>
+      <ol start="5">
+        <li>Run <code>npm run build</code> then <code>firebase deploy</code></li>
+      </ol>
+    </div>
+  </div>
 </div>
